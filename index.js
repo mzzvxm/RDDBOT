@@ -16,8 +16,8 @@ const axios = require('axios');
 // Flag para respostas efêmeras
 const EPHEMERAL = 1 << 6;
 
-const DISCORD_BOT_TOKEN = 'discord_bot_token';
-const REAL_DEBRID_TOKEN = 'rd_token';
+const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
+const REAL_DEBRID_TOKEN = process.env.REAL_DEBRID_TOKEN;
 const CANAL_FIXO_ID = 'channel_id';
 
 const client = new Client({
